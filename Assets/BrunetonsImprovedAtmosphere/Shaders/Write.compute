@@ -1,0 +1,142 @@
+
+//NOTE - Not every kernel has been tested
+
+uint _Width;
+uint _Height;
+uint _Depth;
+
+//-----------------------------------------------------------------------//
+
+//-- write into 1 channel 2D render texture --//
+
+#pragma kernel write2DC1
+
+RWTexture2D<float> _Des2DC1;
+RWStructuredBuffer<float> _Buffer2DC1;
+int _Size;
+
+[numthreads(8,8,1)]
+void write2DC1(uint3 id : SV_DispatchThreadID)
+{
+	int idx = id.x + id.y * _Width;
+	
+	if(id.x < _Width && id.y < _Height)
+		_Des2DC1[id.xy] = _Buffer2DC1[idx];
+}
+
+//-- write into 2 channel 2D render texture --//
+
+#pragma kernel write2DC2
+
+RWTexture2D<float2> _Des2DC2;
+RWStructuredBuffer<float2> _Buffer2DC2;
+
+[numthreads(8,8,1)]
+void write2DC2(uint3 id : SV_DispatchThreadID)
+{
+	int idx = id.x + id.y * _Width;
+	
+	if(id.x < _Width && id.y < _Height)
+		_Des2DC2[id.xy] = _Buffer2DC2[idx];
+}
+
+//-- write into 3 channel 2D render texture --//
+
+#pragma kernel write2DC3
+
+RWTexture2D<float3> _Des2DC3;
+RWStructuredBuffer<float3> _Buffer2DC3;
+
+[numthreads(8,8,1)]
+void write2DC3(uint3 id : SV_DispatchThreadID)
+{
+	int idx = id.x + id.y * _Width;
+	
+	if(id.x < _Width && id.y < _Height)
+		_Des2DC3[id.xy] = _Buffer2DC3[idx].xyz;
+}
+
+//-- write into 4 channel 2D render texture --//
+
+#pragma kernel write2DC4
+
+RWTexture2D<float4> _Des2DC4;
+RWStructuredBuffer<float4> _Buffer2DC4;
+
+[numthreads(8,8,1)]
+void write2DC4(uint3 id : SV_DispatchThreadID)
+{
+	int idx = id.x + id.y * _Width;
+	
+	if(id.x < _Width && id.y < _Height)
+		_Des2DC4[id.xy] = _Buffer2DC4[idx];
+}
+
+//-----------------------------------------------------------------------//
+
+//-- write into 1 channel 3D render texture --//
+
+#pragma kernel write3DC1
+
+RWTexture3D<float> _Des3DC1;
+RWStructuredBuffer<float> _Buffer3DC1;
+
+[numthreads(8,8,8)]
+void write3DC1(uint3 id : SV_DispatchThreadID)
+{
+	int idx = id.x + id.y * _Width + id.z * _Width * _Height;
+	
+	if(id.x < _Width && id.y < _Height && id.z < _Depth)
+		_Des3DC1[id] = _Buffer3DC1[idx];
+}
+
+//-- write into 2 channel 3D render texture --//
+
+#pragma kernel write3DC2
+
+RWTexture3D<float2> _Des3DC2;
+RWStructuredBuffer<float2> _Buffer3DC2;
+
+[numthreads(8,8,8)]
+void write3DC2(uint3 id : SV_DispatchThreadID)
+{
+	int idx = id.x + id.y * _Width + id.z * _Width * _Height;
+	
+	if(id.x < _Width && id.y < _Height && id.z < _Depth)
+		_Des3DC2[id] = _Buffer3DC2[idx];
+}
+
+//-- write into 3 channel 3D render texture --//
+
+#pragma kernel write3DC3
+
+RWTexture3D<float3> _Des3DC3;
+RWStructuredBuffer<float3> _Buffer3DC3;
+
+[numthreads(8,8,8)]
+void write3DC3(uint3 id : SV_DispatchThreadID)
+{
+	int idx = id.x + id.y * _Width + id.z * _Width * _Height;
+	
+	if(id.x < _Width && id.y < _Height && id.z < _Depth)
+		_Des3DC3[id] = _Buffer3DC3[idx].xyz;
+}
+
+//-- write into 4 channel 3D render texture --//
+
+#pragma kernel write3DC4
+
+RWTexture3D<float4> _Des3DC4;
+RWStructuredBuffer<float4> _Buffer3DC4;
+
+[numthreads(8,8,8)]
+void write3DC4(uint3 id : SV_DispatchThreadID)
+{
+	int idx = id.x + id.y * _Width + id.z * _Width * _Height;
+	
+	if(id.x < _Width && id.y < _Height && id.z < _Depth)
+		_Des3DC4[id] = _Buffer3DC4[idx];
+}
+
+
+
