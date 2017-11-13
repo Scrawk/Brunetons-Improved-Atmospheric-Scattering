@@ -18,7 +18,7 @@ The new version contains the follow improvements.
 
 * Adds support for the ozone layer, and for custom density profiles for air molecules and aerosols.
 
-The demo uses a image effect shader as a example of how to use the scattering. The sphere rendered and its light shafts or hard coded into the shader as its just a example. Some work would be needed to convert this into a practical implementation
+The demo uses a image effect shader as a example of how to use the scattering. The sphere rendered and its light shafts are hard coded into the shader as its just a example. Some work would be needed to convert this into a practical implementation
 
 See [home page](https://www.digital-dust.com/single-post/2017/11/13/Brunetons-improved-atmospheric-scattering-in-Unity) for Unity package download.
 
