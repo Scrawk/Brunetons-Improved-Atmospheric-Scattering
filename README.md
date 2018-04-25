@@ -20,7 +20,7 @@ The new version contains the follow improvements.
 
 The demo uses a image effect shader as a example of how to use the scattering. The sphere rendered and its light shafts are hard coded into the shader as its just a example. Some work would be needed to convert this into a practical implementation
 
-See [home page](https://www.digital-dust.com/single-post/2017/11/13/Brunetons-improved-atmospheric-scattering-in-Unity) for Unity package download.
+You can download a Unity package [here](https://app.box.com/s/ac6nkj41vqxo52kpv0m66pbpg4oe571a).
 
 ![AtmosphericScatter0](https://static.wixstatic.com/media/1e04d5_d954a2a7602c4522b7d039c6e20dab31~mv2.jpg/v1/fill/w_550,h_550,al_c,q_80,usm_0.66_1.00_0.01/1e04d5_d954a2a7602c4522b7d039c6e20dab31~mv2.jpg)
 
