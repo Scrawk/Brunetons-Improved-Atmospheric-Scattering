@@ -1,6 +1,6 @@
 # Brunetons-Improved-Atmospheric-Scattering
 
-This a port to Unity of a updated and improved version of [Brunetons atmospheric scatter](https://github.com/ebruneton/precomputed_atmospheric_scattering) published in 2017. The [original](https://www.digital-dust.com/single-post/2017/03/24/Brunetons-atmospheric-scattering-in-Unity) was published in  2008 so is a bit old now.
+This is a port to Unity of a updated and improved version of [Brunetons atmospheric scatter](https://github.com/ebruneton/precomputed_atmospheric_scattering) published in 2017. The [original](https://www.digital-dust.com/single-post/2017/03/24/Brunetons-atmospheric-scattering-in-Unity) was published in  2008 so is a bit old now.
 
 The new version contains the follow improvements.
 
