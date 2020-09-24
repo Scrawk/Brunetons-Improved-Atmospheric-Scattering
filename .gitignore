@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs/Brunetons-Improved-Atmospheric-Scattering/v16/TestStore/0
+/Temp
+/obj/Debug
+/Logs
+/Library
