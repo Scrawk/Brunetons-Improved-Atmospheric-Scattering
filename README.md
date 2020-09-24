@@ -20,12 +20,12 @@ The new version contains the follow improvements.
 
 The demo uses a image effect shader as a example of how to use the scattering. The sphere rendered and its light shafts are hard coded into the shader as its just a example. Some work would be needed to convert this into a practical implementation
 
-![AtmosphericScatter0](BrunetonsImprovedScatter1.jpg)
+![AtmosphericScatter0](./Media/BrunetonsImprovedScatter1.jpg)
 
-![AtmosphericScatter1](BrunetonsImprovedScatter2.jpg)
+![AtmosphericScatter1](./Media/BrunetonsImprovedScatter2.jpg)
 
-![AtmosphericScatter2](BrunetonsImprovedScatter3.jpg)
+![AtmosphericScatter2](./Media/BrunetonsImprovedScatter3.jpg)
 
-![AtmosphericScatter3](BrunetonsImprovedScatter4.jpg)
+![AtmosphericScatter3](./Media/BrunetonsImprovedScatter4.jpg)
 
-![AtmosphericScatter4](BrunetonsImprovedScatter5.jpg)
+![AtmosphericScatter4](./Media/BrunetonsImprovedScatter5.jpg)
