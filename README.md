@@ -29,3 +29,12 @@ The demo uses a image effect shader as a example of how to use the scattering. T
 ![AtmosphericScatter3](./Media/BrunetonsImprovedScatter4.jpg)
 
 ![AtmosphericScatter4](./Media/BrunetonsImprovedScatter5.jpg)
+
+List of atmoshere projects
+
+[Brunetons-Improved-Atmospheric-Scattering](https://github.com/Scrawk/Brunetons-Improved-Atmospheric-Scattering)\
+[Brunetons-Atmospheric-Scatter](https://github.com/Scrawk/Brunetons-Atmospheric-Scatter)\
+[GPU-GEMS-Atmospheric-Scatter](https://github.com/Scrawk/GPU-GEMS-Atmospheric-Scatter)\
+[Proland-To-Unity](https://github.com/Scrawk/Proland-To-Unity)
+
+
